@@ -544,7 +544,7 @@ p {
 }
 
 .testimonial-card {
-  flex: 0 0 30%;
+  flex: 0 0 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 20px;
