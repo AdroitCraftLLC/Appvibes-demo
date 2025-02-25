@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AppVibes</title>
+   <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <button class="hamburger" aria-label="Open menu">&#9776;</button>
+    <span class="logo">AppVibes</span>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#features">App Features</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+    <button class="button button-secondary signup" onclick="openModal('authModal')">Sign Up</button>
+  </header>
+
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-menu" aria-label="Close menu">&times;</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">App Features</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+    <div class="value-proposition">
+      <p>Experience seamless app interactions with AppVibes!</p>
+      <!-- Linked to downloads section -->
+      <a href="#download-section" class="button button-primary try-free">Try It for Free</a>
+    </div>
+  </aside>
+  
+  <!-- Primary Banner (Home) -->
+  <header class="banner primary-banner" id="home">
+    <div class="banner-content">
+      <span class="pretext">Introducing</span>
+      <h1 class="banner-header">Experience Seamless Productivity</h1>
+      <p class="banner-text">Boost your workflow with our cutting-edge features designed for efficiency and ease.</p>
+      <!-- Linked to downloads section -->
+      <a href="#download-section" class="button button-primary">Try for Free</a>
+    </div>
+    <div class="banner-image">
+      <img src="images/banners/premium-appvibes.png" alt="Banner Image">
+    </div>
+  </header>
+
+  <!-- Value Proposition Section (Why Us) -->
+  <section class="value-prop bg-section animate-on-scroll" id="why-us">
+    <div class="pretext">Why Choose Us</div>
+    <div class="header">Elevate Your Business</div>
+    <div class="description">
+      Experience a high-converting landing page that merges minimalist design with cutting-edge features to skyrocket your conversions.
+    </div>
+    <!-- Linked to downloads section -->
+    <a href="#download-section" class="button button-primary">Get Started</a>
+    
+    <!-- Reasons Highlights (Tabbed Section) -->
+    <div class="feature-highlights animate-on-scroll" id="feature-highlights">
+      <div class="tabs">
+        <button class="tab active" data-tab="tab1"> 1</button>
+        <button class="tab" data-tab="tab2"> 2</button>
+        <button class="tab" data-tab="tab3"> 3</button>
+        <button class="tab" data-tab="tab4"> 4</button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-panel active" id="tab1">
+          <p>Reason 1: Onboard your users with an intuitive demo.</p>
+        </div>
+        <div class="tab-panel" id="tab2">
+          <p>Reason 2: Engage with real-time analytics and dynamic counters.</p>
+        </div>
+        <div class="tab-panel" id="tab3">
+          <p>Reason 3: Convert visitors into loyal customers with subtle cues.</p>
+        </div>
+        <div class="tab-panel" id="tab4">
+          <p>Reason 4: Exceptional customer service,</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2 class="features-header">Explore Our App Features</h2>
+    <div class="features-grid">
+      <button class="feature-btn" 
+              data-title="Real-Time Updates" 
+              data-desc="Stay updated with real-time notifications and never miss a beat." 
+              data-image="images/banners/time.png" 
+              data-color="#8B4513">
+        <span class="icon color-1"><i class="fas fa-mobile-alt"></i></span>
+        <span>Real-Time Updates</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <button class="feature-btn" 
+              data-title="Fast Performance" 
+              data-desc="Experience lightning-fast performance across the app." 
+              data-image="images/banners/perfomance.png" 
+              data-color="#A0522D">
+        <span class="icon color-2"><i class="fas fa-bolt"></i></span>
+        <span>Fast Performance</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <button class="feature-btn" 
+              data-title="Secure Data" 
+              data-desc="Your data is protected with industry-leading security measures." 
+              data-image="images/banners/secure.png" 
+              data-color="#CD853F">
+        <span class="icon color-3"><i class="fas fa-lock"></i></span>
+        <span>Secure Data</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <button class="feature-btn" 
+              data-title="User Friendly" 
+              data-desc="An intuitive interface designed for effortless navigation." 
+              data-image="images/banners/friendly.png" 
+              data-color="#D2B48C">
+        <span class="icon color-4"><i class="fas fa-user"></i></span>
+        <span>User Friendly</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <button class="feature-btn" 
+              data-title="Customizable" 
+              data-desc="Tailor your experience with a wealth of customization options." 
+              data-image="images/banners/customize.png" 
+              data-color="#F4A460">
+        <span class="icon color-5"><i class="fas fa-cogs"></i></span>
+        <span>Customizable</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <button class="feature-btn" 
+              data-title="Analytics" 
+              data-desc="Gain deep insights into your app usage with robust analytics." 
+              data-image="images/banners/analytics.png" 
+              data-color="#DEB887">
+        <span class="icon color-6"><i class="fas fa-chart-bar"></i></span>
+        <span>Analytics</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+    </div>
+  </section>
+  
+  <!-- Benefits Section -->
+  <section class="benefits" id="benefits">
+    <h2>The Benefits of Our App.</h2>
+    <div class="benefits-controls">
+      <div class="benefits-buttons">
+        <button class="benefit-btn" data-index="0">Benefit 1</button>
+        <button class="benefit-btn" data-index="1">Benefit 2</button>
+        <button class="benefit-btn" data-index="2">Benefit 3</button>
+        <button class="benefit-btn" data-index="3">Benefit 4</button>
+      </div>
+      <div class="benefit-indicator">1/4</div>
+    </div>
+    <div class="benefit-container">
+      <!-- Benefit Banner 1 -->
+      <div class="benefit-banner" style="background-color: #f4a261;">
+        <div class="banner-content-wrapper">
+          <img src="images/banners/life.png" alt="Benefit 1 Image">
+          <div class="benefit-content">
+            <span class="pretext">Efficiency</span>
+            <h2>Boost Your Productivity</h2>
+            <p>Discover tools designed to enhance your workflow and efficiency.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Benefit Banner 2 -->
+      <div class="benefit-banner" style="background-color: #2a9d8f;">
+        <div class="banner-content-wrapper">
+          <img src="images/banners/stars.png" alt="Benefit 2 Image">
+          <div class="benefit-content">
+            <span class="pretext">Security</span>
+            <h2>Top-Notch Protection</h2>
+            <p>Keep your data safe with industry-leading security measures.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Benefit Banner 3 -->
+      <div class="benefit-banner" style="background-color: #e76f51;">
+        <div class="banner-content-wrapper">
+          <img src="images/banners/beauty.png" alt="Benefit 3 Image">
+          <div class="benefit-content">
+            <span class="pretext">Accessibility</span>
+            <h2>Access Anywhere</h2>
+            <p>Enjoy seamless access on all your devices wherever you go.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Benefit Banner 4 -->
+      <div class="benefit-banner" style="background-color: #264653;">
+        <div class="banner-content-wrapper">
+          <img src="images/banners/flower.png" alt="Benefit 4 Image">
+          <div class="benefit-content">
+            <span class="pretext">Innovation</span>
+            <h2>Next-Level Features</h2>
+            <p>Stay ahead with cutting-edge innovations tailored just for you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="nav-btn prev" aria-label="Previous">&#10094;</button>
+    <button class="nav-btn next" aria-label="Next">&#10095;</button>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our users are saying</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <p>"This service has revolutionized the way I work. Exceptional quality!"</p>
+        <h3>- Lewis Cloud</h3>
+      </div>
+      <div class="testimonial-card">
+        <p>"A game-changer for our business. Reliability at its best."</p>
+        <h3>- D Andrea</h3>
+      </div>
+      <div class="testimonial-card">
+        <p>"Their innovation and support are unparalleled in the industry."</p>
+        <h3>- Alex Johnson</h3>
+      </div>
+      <div class="testimonial-card">
+        <p>"The level of detail and dedication is simply outstanding."</p>
+        <h3>- Prince Manda</h3>
+      </div>
+      <div class="testimonial-card">
+        <p>"I couldn't be happier with the results. Truly transformative!"</p>
+        <h3>- Enock Liche</h3>
+      </div>
+      <div class="testimonial-card">
+        <p>"Every interaction is a pleasure. Highly recommend their services."</p>
+        <h3>- Sarah Mwamba</h3>
+      </div>
+    </div>
+    <div class="testimonials-nav">
+      <button class="nav-btn prev" aria-label="Previous Testimonial">&#10094;</button>
+      <button class="nav-btn next" aria-label="Next Testimonial">&#10095;</button>
+    </div>
+    <div class="testimonial-indicator">1/6</div>
+  </section>
+  
+  <!-- Download Section -->
+  <section class="download-section" id="download-section">
+    <div class="download-content">
+      <h2>Experience the Future of Productivity</h2>
+      <p>
+        Boost efficiency, stay focused, and achieve more with an app built for success.  
+        Join thousands of users transforming their workflow.  
+        <span class="highlight">Get started in seconds.</span>
+      </p>
+      <div class="download-buttons">
+        <a href="#" class="download-btn">
+          <img src="assets/appstore-badge.png" alt="Download on the App Store">
+        </a>
+        <a href="#" class="download-btn google-play">
+          <img class="google-play-img" src="assets/play-store-badge.png" alt="Get it on Google Play">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Banner -->
+  <header class="banner secondary-banner">
+    <div class="banner-content">
+      <span class="pretext">It is Premium</span>
+      <h1 class="banner-header">Experience Flowless Design</h1>
+      <p class="banner-text">Showcase your app on a highly premium, multi-feature, fully responsive, and smoothly multi-purpose template.</p>
+      <!-- Linked to downloads section -->
+      <a href="#download-section" class="button button-primary">Try for Free</a>
+    </div>
+    <div class="banner-image">
+      <img src="images/banners/manda.png" alt="Banner Image">
+    </div>
+  </header>
+
+  <!-- FAQ Section (Expandable Accordion) -->
+  <section class="faq animate-on-scroll" id="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is AppVibes?</button>
+      <div class="faq-answer">AppVibes is a high-converting multi-purpose landing page templatect.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How do I customize it?</button>
+      <div class="faq-answer">It comes with easy-to-use custom CSS and JavaScript for personalization.</div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Section -->
+  <section id="newsletter" class="newsletter">
+    <div class="container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Sign up for updates, insights, and exclusive offers.</p>
+      <form action="mailto:youremail@gmail.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="button button-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Modal Popup -->
+  <div class="modal " id="featureModal">
+    <div class="modal-content" id="modalContent">
+      <button class="close-modal" id="closeModal">&times;</button>
+      <h2 class="modal-header" id="modalHeader">Feature Title</h2>
+      <div class="modal-body features-model-body">
+        <img src="" alt="Feature Image" id="modalImage">
+        <div class="description" id="modalDesc">
+          Feature description goes here.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Promotions Modal -->
+  <div class="modal" id="promoModal">
+    <div class="modal-content">
+      <span class="modal-close" data-modal="promoModal">&times;</span>
+      <h2>Special Offer</h2>
+      <p>Get exclusive access to premium features!</p>
+      <button class="button button-primary" onclick="openModal('authModal')">Learn More</button>
+    </div>
+  </div>
+  
+  <!-- Signup/Login Modal -->
+  <div class="modal" id="authModal">
+    <div class="modal-content">
+      <span class="modal-close" data-modal="authModal">&times;</span>
+      <div class="modal-tabs">
+        <button class="active" data-target="signupForm">Signup</button>
+        <button data-target="loginForm">Login</button>
+      </div>
+      <form id="signupForm" class="active">
+        <input type="text" placeholder="Username" required style="width:100%; margin-bottom:10px; padding:8px;" />
+        <input type="email" placeholder="Email" required style="width:100%; margin-bottom:10px; padding:8px;" />
+        <input type="password" placeholder="Password" required style="width:100%; margin-bottom:10px; padding:8px;" />
+        <button type="submit" class="button button-primary">Signup</button>
+      </form>
+      <form id="loginForm">
+        <input type="email" placeholder="Email" required style="width:100%; margin-bottom:10px; padding:8px;" />
+        <input type="password" placeholder="Password" required style="width:100%; margin-bottom:10px; padding:8px;" />
+        <button type="submit" class="button button-primary">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-section about">
+        <h2>About AppVibes</h2>
+        <p>
+          AppVibes is a premium web showcasing template built to elevate your brand. Our innovative design and smooth animations deliver a modern, user-friendly experience for your audience.
+        </p>
+      </div>
+      <!-- Quick Links Section -->
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faqs">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Download Section -->
+      <div class="footer-section downloads">
+        <h2>Download Our App</h2>
+        <div class="download-buttons">
+          <a href="#" class="download-button google-play">
+            <img src="assets/appstore-badge.png" alt="Google Play">
+          </a>
+          <a href="#" class="download-button app-store">
+            <img src="assets/play-store-badge.png" alt="App Store">
+          </a>
+        </div>
+        <!-- Social Media Section -->
+        <div class="social">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Contact: support@appvibes.com | Phone: +1 (000) 000-000</p>
+      <p>&copy; 2025 AdroitCraftLLC. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
